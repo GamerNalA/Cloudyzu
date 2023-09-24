@@ -306,7 +306,7 @@ local Functions={
 }
 
 SendFunction=function(text)
-writefile("CLOUDYZU/CLOUDYZU.li", text)
+writefile("Cloudyzu/Cloudyzu.li", text)
 end
 
 for name, func in pairs(Functions) do
@@ -329,11 +329,12 @@ set=toclipboard
 
 SendFunction(('welcome|||%s|||%s'):format(localplayer.DisplayName, MarketplaceService:GetProductInfo(game.PlaceId).Name))
 
+-- Thank you Valyseonly
+
 local CloudyzuNotification=Instance.new("ScreenGui")
 local holder_1=Instance.new("Frame")
 local UIListLayout_1=Instance.new("UIListLayout")
 local container_1=Instance.new("Frame")
-
 local main_1=Instance.new("Frame")
 local Top_1=Instance.new("TextLabel")
 local UICorner_1=Instance.new("UICorner")
@@ -346,6 +347,29 @@ local UIGradient_2=Instance.new("UIGradient")
 local information_1=Instance.new("TextLabel")
 local UIPadding_2=Instance.new("UIPadding")
 local UIPadding_3=Instance.new("UIPadding")
+CloudyzuNotification.Name=c.generatebytes()
+CloudyzuNotification.Parent=game.CoreGui
+CloudyzuNotification.DisplayOrder=2147483647
+holder_1.Parent=CloudyzuNotification
+holder_1.AnchorPoint=Vector2.new(0.5, 0.5)
+holder_1.BackgroundColor3=Color3.fromRGB(255,255,255)
+holder_1.BackgroundTransparency=1
+holder_1.BorderColor3=Color3.fromRGB(0,0,0)
+holder_1.BorderSizePixel=0
+holder_1.Position=UDim2.new(0.5, 0,0.5, 0)
+holder_1.Size=UDim2.new(1, 0,1, 0)
+UIListLayout_1.Parent=holder_1
+UIListLayout_1.HorizontalAlignment=Enum.HorizontalAlignment.Right
+UIListLayout_1.SortOrder=Enum.SortOrder.LayoutOrder
+UIListLayout_1.VerticalAlignment=Enum.VerticalAlignment.Bottom
+container_1.Parent=holder_1
+container_1.AnchorPoint=Vector2.new(0.5, 0.5)
+container_1.BackgroundColor3=Color3.fromRGB(255,255,255)
+container_1.BackgroundTransparency=1
+container_1.BorderColor3=Color3.fromRGB(0,0,0)
+container_1.BorderSizePixel=0
+container_1.Position=UDim2.new(0.907002985, 0,0.891910732, 0)
+container_1.Size=UDim2.new(0, 250,0, 155)
 main_1.Parent=container_1
 main_1.AnchorPoint=Vector2.new(0.5, 0.5)
 main_1.AutomaticSize=Enum.AutomaticSize.XY
@@ -356,7 +380,7 @@ main_1.Position=UDim2.new(2, -100,1, -70)
 main_1.Size=UDim2.new(0, 215,0, 100)
 Top_1.Parent=main_1
 Top_1.AnchorPoint=Vector2.new(0.5, 0.5)
-Top_1.BackgroundColor3=Color3.fromRGB(10, 132, 255)
+Top_1.BackgroundColor3=Color3.fromRGB(21, 248, 159)
 Top_1.BorderColor3=Color3.fromRGB(27, 42, 53)
 Top_1.Position=UDim2.new(0.5, 0,0.119999997, 0)
 Top_1.Size=UDim2.new(0, 215,0, 25)
@@ -374,14 +398,13 @@ CloudyzuIcon_1.BackgroundTransparency=1
 CloudyzuIcon_1.BorderColor3=Color3.fromRGB(27, 42, 53)
 CloudyzuIcon_1.Position=UDim2.new(-0.12110053, 0, 0.5, 0)
 CloudyzuIcon_1.Size=UDim2.new(0, 21, 0, 21)
-CloudyzuIcon_1.Image = "rbxassetid://14838778668"
-UIPadding_1.Parent = Top_1
-UIPadding_1.PaddingLeft = UDim.new(0, 40)
+CloudyzuIcon_1.Image="rbxassetid://14838778668"
+UIPadding_1.Parent=Top_1
+UIPadding_1.PaddingLeft=UDim.new(0, 40)
 UICorner_2.Parent=main_1
 UICorner_2.CornerRadius=UDim.new(0, 4)
 UIGradient_1.Parent=main_1
-UIGradient_1.Color=ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(10, 132, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(11, 76, 168))}
-
+UIGradient_1.Color=ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(24, 211, 206)), ColorSequenceKeypoint.new(1, Color3.fromRGB(24, 182, 240))}
 UIGradient_1.Rotation=90
 UIStroke_1.Parent=main_1
 UIStroke_1.ApplyStrokeMode=Enum.ApplyStrokeMode.Border
@@ -399,21 +422,21 @@ information_1.Position=UDim2.new(0.49999997, 0, 0.610000014, 0)
 information_1.Size=UDim2.new(0, 214, 0, 78)
 information_1.Text=""
 information_1.Font=Enum.Font.Montserrat
-
 information_1.TextColor3=Color3.fromRGB(255, 255, 255)
 information_1.TextSize=12
 information_1.TextWrapped=true
 information_1.TextXAlignment=Enum.TextXAlignment.Left
 information_1.TextYAlignment=Enum.TextYAlignment.Top
 UIPadding_2.Parent=information_1
-UIPadding_2.PaddingLeft=UDim.new(0,10)
-UIPadding_2.PaddingRight=UDim.new(0,2)
-UIPadding_2.PaddingTop=UDim.new(0,10)
+UIPadding_2.PaddingLeft=UDim.new(0, 10)
+UIPadding_2.PaddingRight=UDim.new(0, 2)
+UIPadding_2.PaddingTop=UDim.new(0, 10)
 UIPadding_3.Parent=container_1
-UIPadding_3.PaddingRight=UDim.new(0,20)
+UIPadding_3.PaddingRight=UDim.new(0, 20)
+
 
 local function SAOKCV_fake_script()
-	local scriptz = Instance.new('LocalScript', YeetusNotification)
+	local scriptz = Instance.new('LocalScript', CloudyzuNotification)
 	scriptz.Name = c.generatebytes()
 	
 	local function TypeWrite(Obj, Text)
@@ -462,4 +485,3 @@ local function SAOKCV_fake_script()
 	CloudyzuNotification:Remove()
 end
 coroutine.wrap(SAOKCV_fake_script)()
-
