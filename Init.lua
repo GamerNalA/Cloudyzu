@@ -366,10 +366,10 @@ main_1.Size = UDim2.new(0, 215, 0, 100)
 Top_1.Parent = main_1
 Top_1.AnchorPoint = Vector2.new(0.5, 0.5)
 Top_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-
 Top_1.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Top_1.Position = UDim2.new(0.5, 0, 0.119999997, 0)
 Top_1.Size = UDim2.new(0, 215, 0, 25)
+
 Top_1.Font = Enum.Font.Gotham
 Top_1.Text = "Cloudyzu"
 Top_1.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -381,6 +381,7 @@ CloudyzuIcon_1.Parent = Top_1
 CloudyzuIcon_1.AnchorPoint = Vector2.new(0.5, 0.5)
 CloudyzuIcon_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CloudyzuIcon_1.BackgroundTransparency = 1
+
 CloudyzuIcon_1.BorderColor3 = Color3.fromRGB(27, 42, 53)
 CloudyzuIcon_1.Position = UDim2.new(-0.12110053, 0, 0.5, 0)
 CloudyzuIcon_1.Size = UDim2.new(0, 21, 0, 21)
@@ -389,10 +390,11 @@ UIPadding_1.Parent = Top_1
 UIPadding_1.PaddingLeft = UDim.new(0, 40)
 UICorner_2.Parent = main_1
 UICorner_2.CornerRadius = UDim.new(0, 4)
-UIGradient_1.Parent = main_1
+UIGradient_1.Parent = Top_1
 UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(31, 31, 31)), ColorSequenceKeypoint.new(1, Color3.fromRGB(63, 160, 239))}
 UIGradient_1.Rotation = 90
 UIStroke_1.Parent = main_1
+
 UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 UIStroke_1.Color = Color3.fromRGB(255, 255, 255)
 UIStroke_1.Thickness = 2
@@ -402,13 +404,13 @@ information_1.Parent = main_1
 information_1.AnchorPoint = Vector2.new(0.5, 0.5)
 information_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 information_1.BackgroundTransparency = 1
-
 information_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 information_1.BorderSizePixel = 0
 information_1.Position = UDim2.new(0.49999997, 0, 0.610000014, 0)
 information_1.Size = UDim2.new(0, 214, 0, 78)
 information_1.Text = ""
 information_1.Font = Enum.Font.Montserrat
+
 information_1.TextColor3 = Color3.fromRGB(255, 255, 255)
 information_1.TextSize = 12
 information_1.TextWrapped = true
