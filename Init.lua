@@ -331,23 +331,7 @@ SendFunction(('welcome|||%s|||%s'):format(localplayer.DisplayName, MarketplaceSe
 
 -- Thank you Valyseonly
 
-local CloudyzuNotification = Instance.new("ScreenGui")
-local holder_1 = Instance.new("Frame")
-local UIListLayout_1 = Instance.new("UIListLayout")
-local container_1 = Instance.new("Frame")
-local main_1 = Instance.new("Frame")
-local Top_1 = Instance.new("TextLabel")
-local UICorner_1 = Instance.new("UICorner")
-local CloudyzuIcon_1 = Instance.new("ImageLabel")
-local UIPadding_1 = Instance.new("UIPadding")
-local UICorner_2 = Instance.new("UICorner")
-local UIGradient_1 = Instance.new("UIGradient")
-local UIStroke_1 = Instance.new("UIStroke")
-local UIGradient_2 = Instance.new("UIGradient")
-local information_1 = Instance.new("TextLabel")
-local UIPadding_2 = Instance.new("UIPadding")
-local UIPadding_3 = Instance.new("UIPadding")
-
+local CloudyzuNotification = Instance.new("ScreenGui") local holder_1 = Instance.new("Frame") local UIListLayout_1 = Instance.new("UIListLayout") local container_1 = Instance.new("Frame") local main_1 = Instance.new("Frame") local Top_1 = Instance.new("TextLabel") local UICorner_1 = Instance.new("UICorner") local CloudyzuIcon_1 = Instance.new("ImageLabel") local UIPadding_1 = Instance.new("UIPadding") local UICorner_2 = Instance.new("UICorner") local UIGradient_1 = Instance.new("UIGradient") local UIStroke_1 = Instance.new("UIStroke") local UIGradient_2 = Instance.new("UIGradient") local information_1 = Instance.new("TextLabel") local UIPadding_2 = Instance.new("UIPadding") local UIPadding_3 = Instance.new("UIPadding")
 CloudyzuNotification.Name = c.generatebytes()
 CloudyzuNotification.Parent = game.CoreGui
 CloudyzuNotification.DisplayOrder = 2147483647
@@ -381,7 +365,8 @@ main_1.Position = UDim2.new(2, -100, 1, -70)
 main_1.Size = UDim2.new(0, 215, 0, 100)
 Top_1.Parent = main_1
 Top_1.AnchorPoint = Vector2.new(0.5, 0.5)
-Top_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  -- Set to white
+Top_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
 Top_1.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Top_1.Position = UDim2.new(0.5, 0, 0.119999997, 0)
 Top_1.Size = UDim2.new(0, 215, 0, 25)
@@ -399,13 +384,13 @@ CloudyzuIcon_1.BackgroundTransparency = 1
 CloudyzuIcon_1.BorderColor3 = Color3.fromRGB(27, 42, 53)
 CloudyzuIcon_1.Position = UDim2.new(-0.12110053, 0, 0.5, 0)
 CloudyzuIcon_1.Size = UDim2.new(0, 21, 0, 21)
-CloudyzuIcon_1.Image = "rbxassetid://14838778668
+CloudyzuIcon_1.Image = "rbxassetid://14838778668"
 UIPadding_1.Parent = Top_1
 UIPadding_1.PaddingLeft = UDim.new(0, 40)
 UICorner_2.Parent = main_1
 UICorner_2.CornerRadius = UDim.new(0, 4)
 UIGradient_1.Parent = main_1
-UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(63, 160, 239)), ColorSequenceKeypoint.new(1, Color3.fromRGB(31, 31, 31))}  -- Set to the gradient between blue and dark gray
+UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(31, 31, 31)), ColorSequenceKeypoint.new(1, Color3.fromRGB(63, 160, 239))}
 UIGradient_1.Rotation = 90
 UIStroke_1.Parent = main_1
 UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
@@ -417,6 +402,7 @@ information_1.Parent = main_1
 information_1.AnchorPoint = Vector2.new(0.5, 0.5)
 information_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 information_1.BackgroundTransparency = 1
+
 information_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 information_1.BorderSizePixel = 0
 information_1.Position = UDim2.new(0.49999997, 0, 0.610000014, 0)
@@ -434,7 +420,6 @@ UIPadding_2.PaddingRight = UDim.new(0, 2)
 UIPadding_2.PaddingTop = UDim.new(0, 10)
 UIPadding_3.Parent = container_1
 UIPadding_3.PaddingRight = UDim.new(0, 20)
-
 
 
 local function SAOKCV_fake_script()
